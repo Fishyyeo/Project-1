@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font family: times new roman;
+}
+.site-header {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffa8a8;
+    padding: 40px;
+    text-align: center;
+}
+.logo {
+    color: #704312;
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    background-color: #ffdba5;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    list-style: none;
+    color: #704312;
+}
+.detail-layout {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.detail-layout p {
+    padding: 10px;
+}
+.detail-hero {
+    color: #704312;
+    padding: 20px;
+    text-align: center;
+}
+.content-grid {
+    display:grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 20px;
+}
+.detail-card {
+    padding: 20px;
+    background-color: #ffcfcf;
+    align-items: center;   
+}
+.detail-card p {
+    padding: 10px;
+    color: #704312;
+    text-align: center;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffa8a8;
+    align-items: center;
+    padding: 40px;
+    margin-top: 20px;
+}
+.foot {
+    color: #704312;
+}
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-links a {
+    text-decoration: none;
+    color: #704312;
+}
+#search {
+    color: #704312;
+    background-color: #ffdba5;
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 20px;
+}
+h3 {
+    color: #704312;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .site-header { 
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+    .nav-links {
+        flex-direction: row;
+        gap: 30px;
+    }
+    .detail-hero {
+    color: #704312;
+    padding: 20px;
+    text-align: left;
+    }
+    .content-grid {
+        grid-template-columns: 3fr 1fr;
+        gap: 20px; 
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .social-links {
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+}
